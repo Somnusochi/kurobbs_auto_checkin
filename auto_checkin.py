@@ -187,7 +187,7 @@ class KurobbsClient:
         )
         # 添加3秒延迟
         time.sleep(3)
-        
+
         # 获取帖子列表
         posts = self.get_post_list()
         if posts:
