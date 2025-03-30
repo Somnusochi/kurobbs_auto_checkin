@@ -43,27 +43,19 @@ class KurobbsClient:
     def get_headers(self) -> Dict[str, str]:
         """获取API请求所需的请求头。"""
         return {
-          "host": "api.kurobbs.com",
-          "content-length": "83",
-          "pragma": "no-cache",
-          "cache-control": "no-cache",
-          "sec-ch-ua-platform": "\"Android\"",
-          "sec-ch-ua": "\"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Android WebView\";v=\"134\"",
-          "devcode": "122.232.90.235, Mozilla/5.0 (Linux; Android 12; XQ-AT52 Build/58.2.A.7.93; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/134.0.6998.135 Mobile Safari/537.36 Kuro/2.3.2 KuroGameBox/2.3.2",
-          "sec-ch-ua-mobile": "?1",
-          "source": "android",
-          "user-agent": "Mozilla/5.0 (Linux; Android 12; XQ-AT52 Build/58.2.A.7.93; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/134.0.6998.135 Mobile Safari/537.36 Kuro/2.3.2 KuroGameBox/2.3.2",
-          "accept": "application/json, text/plain, */*",
-          "content-type": "application/x-www-form-urlencoded",
-          "token": self.token,
-          "origin": "https://web-static.kurobbs.com",
-          "x-requested-with": "com.kurogame.kjq",
-          "sec-fetch-site": "same-site",
-          "sec-fetch-mode": "cors",
-          "sec-fetch-dest": "empty",
-          "accept-encoding": "gzip, br",
-          "accept-language": "zh-CN,zh;q=0.9,ja-JP;q=0.8,ja;q=0.7,en-US;q=0.6,en;q=0.5",
-          "priority": "u=1, i"
+            "osversion": "Android",
+            "devcode": "39BAFA5213054623682C1EE76533416163075BFC",
+            "countrycode": "CN",
+            "ip": "192.168.199.159",
+            "model": "SM-G9730",
+            "source": "android",
+            "lang": "zh-Hans",
+            "version": "2.3.2",
+            "versioncode": "2320",
+            "token": self.token,
+            "content-type": "application/x-www-form-urlencoded; charset=utf-8",
+            "accept-encoding": "gzip",
+            "user-agent": "okhttp/3.10.0",
         }
 
     def make_request(self, url: str, data: Dict[str, Any]) -> Response:
